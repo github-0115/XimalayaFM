@@ -136,7 +136,7 @@
                         android:layout_centerInParent="true"
                         android:layout_width="180dp"
                         android:layout_height="180dp"
-                        android:background="@drawable/image_default"/>
+                         />
 
                     <RelativeLayout
                         android:id="@+id/ac_play_seekbar_rl"
@@ -251,14 +251,15 @@
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
                     >
-                    <ImageView
+                    <ximalayafm.beiing.com.ximalayafm.widgets.RoundImageView
                         android:id="@+id/play_artist_cover"
                         android:layout_marginRight="10dp"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/image_default"/>
+                         />
                     <TextView
                         android:id="@+id/play_artist_name"
+                        android:layout_marginTop="10dp"
                         android:layout_alignTop="@id/play_artist_cover"
                         android:layout_toRightOf="@id/play_artist_cover"
                         android:layout_width="wrap_content"
@@ -318,6 +319,7 @@
                  >
 
                 <RadioGroup
+                    android:id="@+id/ac_play_bottom_rg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -348,6 +350,8 @@
 
 
                 <android.support.v4.view.ViewPager
+                    android:id="@+id/ac_play_view_pager"
+                    android:layout_marginTop="10dp"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     />

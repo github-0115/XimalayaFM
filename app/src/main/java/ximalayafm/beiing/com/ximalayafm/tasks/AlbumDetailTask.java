@@ -39,6 +39,7 @@ public class AlbumDetailTask extends BaseTask {
                 try {
                     ret.resultCode = detailJSON.getInt("ret");
 
+
                     //解析数据
                     ret.data = EntityParseUtil.parseAlbumDetail(detailJSON);
                 } catch (JSONException e) {

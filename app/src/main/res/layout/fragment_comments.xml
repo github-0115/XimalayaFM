@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ximalayafm.beiing.com.ximalayafm.fragments.play_fragments.CommentsFragment">
+
+    <ImageView
+        android:id="@+id/fm_comments_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ximalayafm.beiing.com.ximalayafm.widgets.MaxHeightListView
+        android:id="@+id/fm_comments_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

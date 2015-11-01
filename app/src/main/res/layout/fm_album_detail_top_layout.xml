@@ -77,7 +77,7 @@
             android:textSize="10sp"
             android:drawableLeft="@drawable/ic_album_play_count"/>
 
-        <ImageView
+        <ximalayafm.beiing.com.ximalayafm.widgets.RoundImageView
             android:id="@+id/album_detail_artist_head"
             android:layout_toRightOf="@+id/album_detail_album_icon"
             android:layout_alignTop="@id/album_detail_album_icon"

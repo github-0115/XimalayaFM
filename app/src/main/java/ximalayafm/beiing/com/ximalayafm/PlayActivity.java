@@ -8,6 +8,7 @@ import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Parcelable;
 import android.support.v4.content.LocalBroadcastManager;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -78,13 +80,19 @@ public class PlayActivity extends SwipeBackActivity implements View.OnClickListe
     private TextView albumDeacrip;
 
 
-
     private SimpleDateFormat dateFormat;
     private LocalBroadcastManager lbManager;// 本地广播管理器
 
     PrgReceiver prgReceiver;// 进度广播接收者
 
     private boolean isPlaying = false;
+
+
+    //---------------- 播放控制底部的
+    private ViewPager bottomViewPager;
+    private RadioGroup bottomRadioGroup;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,6 +179,12 @@ public class PlayActivity extends SwipeBackActivity implements View.OnClickListe
         artisName = (TextView) findViewById(R.id.play_artist_name);
         subDetail = (TextView) findViewById(R.id.play_sub_detail);
         albumDeacrip = (TextView) findViewById(R.id.play_ablum_descrip);
+
+
+        //----------------- 播放控制 底部更多有关消息
+        bottomViewPager = (ViewPager) findViewById(R.id.ac_play_view_pager);
+        bottomRadioGroup = (RadioGroup) findViewById(R.id.ac_play_bottom_rg);
+        
 
 
         backIb.setOnClickListener(this);

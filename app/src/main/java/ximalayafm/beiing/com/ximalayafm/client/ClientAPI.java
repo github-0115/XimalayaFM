@@ -85,6 +85,24 @@ public final class ClientAPI {
     }
 
     /**
+     * 接口19
+     * 返回曲目评论
+     * @param url
+     * @return
+     */
+    public static JSONObject getTrackComments(String url){
+        JSONObject ret = null;
+        byte[] data = HttpTools.doGet(url);
+        if (data != null) {
+            ret = getJSONFromBytes(data);
+        }
+        return ret;
+    }
+
+
+
+
+    /**
      * 把字节数组转化为JSONObject
      * @param data
      * @return

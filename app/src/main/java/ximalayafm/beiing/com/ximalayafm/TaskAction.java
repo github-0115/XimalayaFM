@@ -13,10 +13,18 @@ public class TaskAction {
 
     //--------
     //异步任务action 标识
+
+    // 发现-分类
     public static final int TASK_ACTION_DISCOVER_CATEGORIES = 1;
+
+    // 发现-推荐
     public static final int TASK_ACTION_DISCOVER_RECOMMENDS = 2 ;
 
+    // 专辑详情
     public static final int TASK_ACTION_ALBUM_DETAIL = 3;
+
+    // 曲目评论
+    public static final int TASK_ACTION_TRACK_COMMENTS = 4;
 
 
 }
