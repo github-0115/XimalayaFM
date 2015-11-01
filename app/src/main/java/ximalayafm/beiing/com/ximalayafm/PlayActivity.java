@@ -34,10 +34,11 @@ import java.util.List;
 import java.util.Locale;
 
 import ximalayafm.beiing.com.ximalayafm.application.FMApplication;
+import ximalayafm.beiing.com.ximalayafm.bases.SwipeBackActivity;
 import ximalayafm.beiing.com.ximalayafm.entity.album_detail.TrackBig;
 import ximalayafm.beiing.com.ximalayafm.service.PlayService;
 
-public class PlayActivity extends Activity implements View.OnClickListener, SeekBar.OnSeekBarChangeListener {
+public class PlayActivity extends SwipeBackActivity implements View.OnClickListener, SeekBar.OnSeekBarChangeListener {
 
     public static void startPlayActivity(Context context, ArrayList<TrackBig> trackBigs, int position){
         Intent intent = new Intent(context, PlayActivity.class);

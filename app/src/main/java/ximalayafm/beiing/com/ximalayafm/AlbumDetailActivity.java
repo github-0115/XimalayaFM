@@ -11,9 +11,10 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
 
+import ximalayafm.beiing.com.ximalayafm.bases.SwipeBackActivity;
 import ximalayafm.beiing.com.ximalayafm.fragments.AlbumDetailFragment;
 
-public class AlbumDetailActivity extends FragmentActivity {
+public class AlbumDetailActivity extends SwipeBackActivity {
 
 
     public static void startAlbumDetailActivity(Context context, long albumId, long trackId){

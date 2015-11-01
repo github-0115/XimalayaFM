@@ -346,6 +346,12 @@
                         android:text="相关推荐"/>
                 </RadioGroup>
 
+
+                <android.support.v4.view.ViewPager
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    />
+
                 <TextView android:layout_height="60dp"
                     android:layout_width="match_parent"
                     android:gravity="center" android:background="#eeeeee"
